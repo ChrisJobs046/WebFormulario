@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <h4>Realizar una aplicación web utilizando .net core mvc,
+    que solicite a través de un formulario al usuario su día y mes de nacimiento y que según esa información determine su signo zodiacal.
+    </h4>
+
+    <form  asp-action="Signo" method="post">
+
+        <label for="n1">Ven y averigua tu signo del zodiaco</label>
+        <p></p>
+        <label for="Usuario">Usuario</label>
+        <input type="text" id="Usuario" name="Usuario" value="" />
+
+        <label for="Dia">Dia</label>
+        <input type="text" id="Dia" name="Dia" value="" />
+
+        <label for="Mes">Mes</label>
+        <select id="Mes" name="Mes">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
+        <p></p>
+        <button type="submit">procesar</button>
+        <button type="reset">Limpiar</button>
+
+        
+    </form>
